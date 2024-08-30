@@ -7,12 +7,12 @@ import Dashboard from "./pages/admin-view/Dashboard";
 import Products from "./pages/admin-view/Products";
 import Orders from "./pages/admin-view/Orders";
 import Features from "./pages/admin-view/Features";
+import ShoppingLayout from "./components/shopping-view/ShoppingLayout";
+import NotFound from "./pages/Not-Found/NotFound";
 
 export default function App() {
   return (
     <div>
-      {/* Common Components */}
-      <h1>Header Components</h1>
       <Routes>
         <Route path="/auth" element={<AuthLayout />}>
           <Route path="login" element={<Login />} />
@@ -25,6 +25,10 @@ export default function App() {
           <Route path="orders" element={<Orders />} />
           <Route path="features" element={<Features />} />
         </Route>
+
+        <Route path="/shop" element={<ShoppingLayout />}></Route>
+
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </div>
   );
