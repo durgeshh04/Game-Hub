@@ -26,7 +26,9 @@ export default function App() {
           <Route path="features" element={<Features />} />
         </Route>
 
-        <Route path="/shop" element={<ShoppingLayout />}></Route>
+        <Route path="/shop" element={<ShoppingLayout />}>
+        
+        </Route>
 
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
