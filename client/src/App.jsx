@@ -32,9 +32,9 @@ export default function App() {
 
         <Route path="/shop" element={<ShoppingLayout />}>
           <Route path="home" element={<ShoppingHome />} />
-          <Route path="home" element={<ShoppingListing />} />
-          <Route path="home" element={<ShoppingAccount />} />
-          <Route path="home" element={<ShoppingCheckout />} />
+          <Route path="listing" element={<ShoppingListing />} />
+          <Route path="account" element={<ShoppingAccount />} />
+          <Route path="checkout" element={<ShoppingCheckout />} />
         </Route>
 
         <Route path="*" element={<NotFound />}></Route>
