@@ -1,10 +1,11 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
       <div>
-        <p className="font-bold">Welcome to my GAME HUB</p>
+        <Navbar />
       </div>
     </>
   );
